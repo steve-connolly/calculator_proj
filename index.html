@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Project</title>
 </head>
 <body>
-    <span id="num1-el"></span>
-    <span id="num2-el"></span>
+    <div class="header">Calculator
+    </div>
+    <span id="num1"></span>
+    <span id="num2"></span>
     <br>
-    <button onclick="add()">Add</button>
-    <button onclick="subtract()">Subtract</button>
-    <button onclick="divide()">Divide</button>
-    <button onclick="multiply()">Multiply</button>
-    <br>
-    <span id="sum-el">Sum: </span>
+    <button onclick="one()">1</button>
+    <button onclick="two()">2</button>
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="result()">=</button>
+    <!--<span id="sum-el">Sum: </span>
     <span id="difference-el">Difference: </span>
     <span id="product-el">Product: </span>
-    <span id="quotient-el">Quotient</span>
+    <span id="quotient-el">Quotient</span>--> <!--Do I put the buttons inside these so I can use the document.GetElementById?-->
+    <br>
     <script src="index.js"></script>
 </body>
 </html>
