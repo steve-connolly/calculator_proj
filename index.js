@@ -1,7 +1,7 @@
-let num1 = 8
+let num1 = 1
 let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
+document.getElementById("num1").textContent = num1
+document.getElementById("num2").textContent = num2
 
 // Create four functions: add(), subtract(), divide(), multiply()
 let sumEl = document.getElementById("sum-el")
@@ -21,19 +21,9 @@ function subtract() {
     differenceEl.textContent = "Difference: " + difference
 }
 
-let productEl = document.getElementById("product-el")
+function result() {
+}//Could I use an if statement here: if sum is chosen then perform sum, else difference is chosen?
 
-function multiply() {
-    let product = num1 * num2
-    productEl.textContent = "Product: " + product
-}
-
-let quotientEl = document.getElementById("quotient-el")
-
-function divide() {
-    let quotient = num1 / num2
-    quotientEl.textContent = "Quotient: " + quotient
-}
 // Call the correct function when the user clicks on one of the buttons
 // Perform the given calculation using num1 and num2
 // Render the result of the calculation in the paragraph with id="sum-el"
