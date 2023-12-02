@@ -1,18 +1,43 @@
-let num1 = 1
-let num2 = 2
+let num1 = ""
+let num2 = ""
+let operator = ""
+
 document.getElementById("num1").textContent = num1
 document.getElementById("num2").textContent = num2
 
-function add() {
-    let sum = num1 + num2
-    sumEl.textContent = "Sum: " + sum
+function display() {
+    document.getElementById("num1").textContent = num1
+    document.getElementById("num2").textContent = num2
+    document.getElementById("operator").textContent = operator
+    document.getElementById("result").textContent = result
+    //update display
 }
 
-let differenceEl = document.getElementById("difference-el")
+function one() {
+    appendNumber(1)
+}
+
+function two() {
+    appendNumber(2)
+}
+
+function appendNumber(number) {
+    if (operator === "") {
+        num1 += number;
+    } else {
+        num2 += number;
+    }
+    display();
+}
+
+function add() {
+    operator = "+"
+    display()
+}
 
 function subtract() {
-    let difference = num1 - num2
-    differenceEl.textContent = "Difference: " + difference
+    operator = "-"
+    display()
 }
 
 function result() {
