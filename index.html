@@ -9,8 +9,12 @@
 <body>
     <div class="header">Calculator
     </div>
-    <span id="num1"></span>
-    <span id="num2"></span>
+    <br>
+    <div id="input-display">Input: <span id="num1"></span><span id="operator"></span><span id="num2"></span>
+    </div>
+    <br>
+    <div id="result-display">Result: <span id="result"></span>
+    </div>
     <br>
     <div class="calculatorGrid">
         <button class="button" onclick="one()">1</button>
@@ -19,11 +23,9 @@
         <button class="button" onclick="subtract()">-</button>
         <button class="button" onclick="result()">=</button>
     </div>  
-    <!--<span id="sum-el">Sum: </span>
-    <span id="difference-el">Difference: </span>
-    <span id="product-el">Product: </span>
-    <span id="quotient-el">Quotient</span>--> <!--Do I put the buttons inside these so I can use the document.GetElementById?-->
     <br>
+    
+    
     <script src="index.js"></script>
 </body>
 </html>
