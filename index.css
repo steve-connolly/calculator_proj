@@ -6,11 +6,12 @@ body {
 }
 
 span {
-    border-bottom: 2px solid black;
+    
     padding: 4px;
 }
 
 .calculatorGrid {
+
 }
 button {
     margin: 20px 0;
