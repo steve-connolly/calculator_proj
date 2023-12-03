@@ -9,8 +9,7 @@ function display() {
     document.getElementById("num1").textContent = num1
     document.getElementById("num2").textContent = num2
     document.getElementById("operator").textContent = operator
-    document.getElementById("result").textContent = result
-    //update display
+    document.getElementById("result").textContent = calculate()
 }
 
 function one() {
@@ -40,18 +39,20 @@ function subtract() {
     display()
 }
 
-function result() {
+function calculate() {
     if (num1 !== "" && num2 !== "")
     switch(operator) {
         case "+":
-            return num1 + num2;
+            return parseFloat(num1) + parseFloat(num2);
         case "-":
-            return num1 - num2;
+            return parseFloat(num1) - parseFloat(num2);
+        default:
+            break;
 }     
 }
 
 
-//Could I use an if statement here: if sum is chosen then perform sum, else difference is chosen?
+
 
 
 
