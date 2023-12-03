@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Project</title>
+    <title>Calculator Project</title>
 </head>
 <body>
     <div class="header">Calculator
     </div>
     <br>
-    <div id="input-display">Input: <span id="num1"></span><span id="operator"></span><span id="num2"></span>
+    <div class="calculator">
+        <div class="input">Input: <span id="num1"></span><span id="operator"></span><span id="num2"></span>
+            <div id="result">Result: <span id="result"></span>
+            </div>
+        </div>
+        <div class="grid">
+            <button class="button" onclick="seven()">7</button>
+            <button class="button" onclick="eight()">8</button>
+            <button class="button" onclick="nine()">9</button>
+            <button class="button" onclick="add()">+</button>
+            <button class="button" onclick="four()">4</button>
+            <button class="button" onclick="five()">5</button>
+            <button class="button" onclick="six()">6</button>
+            <button class="button" onclick="subtract()">-</button>
+            <button class="button" onclick="one()">1</button>
+            <button class="button" onclick="two()">2</button>
+            <button class="button" onclick="three()">3</button>
+            <button class="button" onclick="multiply()">x</button>
+            <button class="button" onclick="zero()">0</button>
+            <button class="button" onclick="decimal()">.</button>
+            <button class="button" onclick="divide()">/</button>
+            <button class="button" onclick="calculate()">=</button>
+        </div>  
+        <br>
     </div>
-    <br>
-    <div id="result-display">Result: <span id="result"></span>
-    </div>
-    <br>
-    <div class="calculatorGrid">
-        <button class="button" onclick="one()">1</button>
-        <button class="button" onclick="two()">2</button>
-        <button class="button" onclick="add()">+</button>
-        <button class="button" onclick="subtract()">-</button>
-        <button class="button" onclick="result()">=</button>
-    </div>  
-    <br>
     
-    
-    <script src="index.js"></script>
+    <!--<script src="index.js"></script>-->
 </body>
 </html>
