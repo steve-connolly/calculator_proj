@@ -1,7 +1,7 @@
 
 .header {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .input {
@@ -57,6 +57,37 @@ button:hover {
 .equal:hover {
     background-color: #F08000;
 }
+
+@media screen and (max-width: 990px) {
+    .calculator {
+        width: 35vw;
+     }
+} 
+
+@media screen and (max-width: 840px) {
+    .calculator {
+        width: 40vw;
+     }
+} 
+
+@media screen and (max-width: 540px) {
+    .calculator {
+        width: 55vw;
+     }
+} 
+
+@media screen and (max-width: 430px) {
+    .calculator {
+        width: 75vw;
+     }
+} 
+
+@media screen and (max-width: 375px) {
+    .calculator {
+        width: 80vw;
+     }
+} 
+
 
 
 
