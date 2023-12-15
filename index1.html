@@ -9,9 +9,35 @@
     <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
-    <div class="container mt-4">
+    <div class="container">
         <h1 class="text-center">Calculator</h1>
     </div>
     <br>
+    <div class="calculator mx-auto bg-dark p-3 border rounded">
+        <div class="input p-2 border rounded"><span id="num1"></span><span id="operator"></span><span id="num2"></span>
+            <div id="result"><span id="result"></span>
+            </div>
+        </div>
+        <div class="grid mt-3">
+            <button class="btn btn-light" onclick="appendNumber(7)">7</button>
+            <button class="btn btn-light" onclick="appendNumber(8)">8</button>
+            <button class="btn btn-light" onclick="appendNumber(9)">9</button>
+            <button class="btn operator" onclick="appendNumber('/')">/</button>
+            <button class="btn btn-light" onclick="appendNumber(4)">4</button>
+            <button class="btn btn-light" onclick="appendNumber(5)">5</button>
+            <button class="btn btn-light" onclick="appendNumber(6)">6</button>
+            <button class="btn operator" onclick="appendNumber('*')">x</button>
+            <button class="btn btn-light" onclick="appendNumber(1)">1</button>
+            <button class="btn btn-light" onclick="appendNumber(2)">2</button>
+            <button class="btn btn-light" onclick="appendNumber(3)">3</button>
+            <button class="btn operator" onclick="appendNumber('-')">-</button>
+            <button class="btn btn-light" onclick="appendNumber(0)">0</button>
+            <button class="btn btn-light" onclick="clearInput('C')">C</button>
+            <button class="btn equal" onclick="calculate('=')">=</button>
+            <button class="btn operator" onclick="appendNumber('+')">+</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
