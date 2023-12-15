@@ -17,7 +17,7 @@
 .calculator {
     background-color: #222831;
     margin: auto; 
-    width: 30vw;
+    width: auto;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -26,6 +26,7 @@
     display: grid;
     margin: 10px 10px;
     grid-template-columns: auto auto auto auto;
+    grid-gap: 2px;
 }
 
 button {
@@ -33,7 +34,7 @@ button {
     font-size: 25px;
     text-align: center;
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px;
     padding: 20px;
     transition-duration: 0.4s; 
 }
