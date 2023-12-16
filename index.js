@@ -1,30 +1,29 @@
-let expression = ""
+let expression = "";
 
 function appendNumber(number) {
-    console.log(number)
-    if (operator == null && number!== "=") 
+    if ( number == null) 
         {alert("Number is missing"); } 
-    else if (number != "=") {
-        expression = expression + number;
-        document.getElementById("num1").textContent = expression; 
-    } else { 
-        if (number =="=") {
-       document.getElementById("result").textContent = eval(expression);
+    else if (number === "=") {
+        calculate();
+    } else {
+       expression = expression + number;
+        document.getElementById("expression").innerHTML = expression;
        clearInput()  
-        }
-    }
-}
+    }  
+}  
 
 function calculate() {
-    document.getElementById("result").textContent = eval(expression);
-    clearInput();
+    let result = eval(expression);
+    expression = result;
+    document.getElementById("expression").innerHTML = result;
 }
 
 function clearInput() {
     expression = "";
-    operator = null;
-    document.getElementById("num1").textContent = "";
-}     
+    document.getElementById("expression").innerHTML = "";
+}   
+
+
 
 
 
