@@ -20,6 +20,10 @@ body {
   margin: 5px;
 }
 
+.expression {
+  color: black;
+}
+
 .grid {
     display: grid;
     margin: auto;
